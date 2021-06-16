@@ -1,0 +1,63 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'rn';
+}
+
+.container{
+    max-width: 1110px;
+    margin: auto;
+}
+
+.header{
+    background: #322E41;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+}
+
+.header__item{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: 0.5s;
+}
+
+.header__item:hover{
+    color: #FFE600;
+    transition: 0.5s;
+}
+
+.header__item::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 220%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.header__list>li:hover .header__item::after{
+    opacity: 1;
+    transition: 0.5s;
+}
