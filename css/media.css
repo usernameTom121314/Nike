@@ -1,4 +1,25 @@
+@media(max-width:1422px){
+    .main__snickers-item{
+        width: 30%;
+        margin-bottom: 40px;
+    }
+    
+    .main__snickers-price{
+        flex-direction: column;
+    }
+    .main__snickers-price a{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
 @media(max-width:1100px){
+    .main__snickers-item{
+        width: 45%;
+        margin-bottom: 40px;
+    }
     .main__news-item{
         width: 45%;
         margin-bottom: 30px;
@@ -113,6 +134,21 @@
 
 
 @media(max-width:700px){
+    .main__snickers{
+        justify-content: center;
+    }
+    .main__snickers-item{
+        width: 80%;
+    }
+    .main__snickers-info h2{
+        font-size:  18px;
+    }
+    .main__snickers-price a{
+        font-size: 18px;
+    }
+    .main__snickers-price span{
+        font-size: 16px;
+    }
     .main__news-item{
         width: 80%;
     }
